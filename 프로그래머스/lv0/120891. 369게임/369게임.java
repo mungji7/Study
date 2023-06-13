@@ -1,18 +1,16 @@
 class Solution {
     public int solution(int order) {
         int answer = 0;
-        int count = 0;
         
         String str = String.valueOf(order);
-        String[] strArr = str.split("");
-        String num[] = {"3", "6", "9"};
         
-        for(int i=0;i<strArr.length;i++) {
-            for(int j=0;j<num.length;j++) {
-                if(strArr[i].contains(num[j])) {
-                    answer++;
-                }
-            } 
+        for(int i=0;i<str.length();i++) {
+            char num = str.charAt(i);
+            System.out.print(num);
+            
+            if(num == '3' || num == '6' || num == '9') {
+                answer++;
+            }
         }
         
         return answer;
