@@ -10,8 +10,7 @@ class Solution {
                     list.add(arr[i]);
                 }
             } else {
-                int elementsToRemove = Math.min(arr[i], list.size());
-                for (int j = 0; j < elementsToRemove; j++) {
+                for (int j = 0; j < arr[i]; j++) {
                     list.remove(list.size() - 1);
                 }
             }
